@@ -25,7 +25,7 @@ author: Boris Ekelchik (@bekelchik)
 options:
   role_arn:
     description:
-      - The Amazon Resource Name (ARN) of the role that the caller is assuming (http://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html#Identifiers_ARNs) 
+      - The Amazon Resource Name (ARN) of the role that the caller is assuming (U(http://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html#Identifiers_ARNs))
     required: true
   role_session_name:
     description:
@@ -48,7 +48,7 @@ options:
     default: null
   mfa_serial_number:
     description:
-      - he identification number of the MFA device that is associated with the user who is making the AssumeRole call. 
+      - The identification number of the MFA device that is associated with the user who is making the AssumeRole call. 
     required: false
     default: null
   mfa_token:
@@ -64,7 +64,7 @@ extends_documentation_fragment: aws
 EXAMPLES = '''
 # Note: These examples do not set authentication details, see the AWS Guide for details.
 
-# Assume an existing role (more details: http://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html)
+# Assume an existing role (more details: U(http://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html))
 sts_assume_role: 
   role_arn: "arn:aws:iam::123456789012:role/someRole"
   session_name: "someRoleSession"
